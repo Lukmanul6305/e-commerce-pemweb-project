@@ -8,9 +8,9 @@ import KelasImage7 from "../assets-web/img/kelas/kelas-7.jpg";
 import KelasImage8 from "../assets-web/img/kelas/kelas-8.jpg";
 import KelasImage9 from "../assets-web/img/kelas/kelas-9.jpg";
 
-import People1 from "../assets-web/img/testimonial/people-1.jpg";
-import People2 from "../assets-web/img/testimonial/people-2.jpg";
-import People3 from "../assets-web/img/testimonial/people-3.jpg";
+import People1 from "../assets-web/img/testimoni/people-1.jpg";
+import People2 from "../assets-web/img/testimoni/people-2.jpg";
+import People3 from "../assets-web/img/testimoni/people-3.jpg";
 
 export const navLinks = [
   {
@@ -25,8 +25,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    path: "testimonial",
-    text: "Testimonial",
+    path: "testimoni",
+    text: "Testimoni",
   },
   {
     id: 4,
@@ -241,7 +241,7 @@ export const kelasTerbaru = [
   },
 ];
 
-export const testimonial = [
+export const testimoni = [
   {
     id: 1,
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
