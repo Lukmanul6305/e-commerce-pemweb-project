@@ -52,10 +52,10 @@ const NavbarComponents = () => {
             {/* Tambahan menu masuk dan daftar */}
             <div className="text-center">
               <NavLink to="/register">
-                <Button variant="outline-danger rounded-1">Daftar</Button>
+                <Button variant="outline-dark rounded-1 me-2">Daftar</Button>
               </NavLink>
               <NavLink to="/login">
-                <Button variant="primary">Masuk</Button>
+                <Button variant="dark">Masuk</Button>
               </NavLink>
             </div>
           </Navbar.Collapse>

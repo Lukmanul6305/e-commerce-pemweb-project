@@ -1,50 +1,58 @@
 import { Container, Row, Col } from "react-bootstrap";
-import HeroImage from "../assets-web/img/header.png";
+import HeroImage from "../assets/img/hero.png";
+import { kelasTerbaru } from "../data/index";
+
 const HomePage = () => {
   return (
     <div className="homepage">
-      <header className="w-100 min-vh-100">
+      <header className="w-100 min-vh-100 d-flex align-items-center">
         <Container>
-          <Row>
-            <Col md={6}>
-              <h1>
-                Temukan <br /> <span>Bakat Kreatifmu</span> <br />
-                Bersama Kami
+          <Row className="header-box d-flex align-items-center">
+            <Col lg="6">
+              <h1 className="mb-4">
+                Belajar Skill Digital <br /> yang Dibutuhkan Dunia Kerja
+                Sekarang
               </h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                ullam facere asperiores laborum provident porro.
+              <p className="mb-4">
+                Mulai dari dasar hingga mahir. Pelajari desain, coding,
+                pemasaran digital, dan lebih banyak lagi—semua dalam satu
+                platform, kapan saja, di mana saja
               </p>
-              <button>Lihat Kelas</button>
-              <button>Lihat Promo</button>
+              <button className="btn btn-dark btn-lg rounded-1 me-2 mb-xs-0 mb-2">
+                Lihat Kelas
+              </button>
+              <button className="btn btn-outline-dark btn-lg rounded-1 mb-xs-0 mb-2">
+                Lihat Promo
+              </button>
             </Col>
-            <Col md={6}>
-              <img src={HeroImage} alt="header-img" className="img-fluid" />
+            <Col lg="6" className="pt-lg-0 pt-5">
+              <img src={HeroImage} alt="hero-img" className="img-fluid" />
             </Col>
           </Row>
         </Container>
-
-        {/* <Container>
+      </header>
+      <div className="kelas w-100 min-vh-100">
+        <Container>
           <Row>
             <Col>
-              <h1>
-                Temukan <br /> <span>Bakat Kreatifmu</span> <br />
-                Bersama Kami
-              </h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                ullam facere asperiores laborum provident porro.
+              <h1 className="text-center fw-bold">Kelas Terbaru</h1>
+              <p className="text-center mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                deleniti.
               </p>
-              <button>Lihat Kelas</button>
-              <button>Lihat Promo</button>
             </Col>
-            <col>
-              <img src={HeroImage} alt="header-img" />
-            </col>
           </Row>
-        </Container> */}
-      </header>
-      <div className="kelas w-100 min-vh-100"></div>
+          <Row>
+            {kelasTerbaru.map((kelas) => {
+              return (
+                <Col key={kelas.id}>
+                  <img src={kelas.image} alt="unplash.com" />
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };
