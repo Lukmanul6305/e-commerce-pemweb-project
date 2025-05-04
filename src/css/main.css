@@ -141,7 +141,10 @@ header {
 
 .homepage .kelas .row:nth-child(2) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Perbaikan: hapus spasi di "minmax (" */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Perbaikan: hapus spasi di "minmax (" */
   gap: 20px; /* Tambahkan jarak antar item */
   padding-inline: 10px; /* Opsional, agar tidak mentok di pinggir */
 }
@@ -158,19 +161,69 @@ header {
   border-radius: 10px; /* Opsional: biar lebih halus tampilannya */
 }
 
-.homepage .kelas .row:nth-child(2) h5{
-  color:var(--color-text);
+.homepage .kelas .row:nth-child(2) h5 {
+  color: var(--color-text);
   font-weight: bold;
   line-height: 1.5;
 }
 
-.homepage .kelas .row:nth-child(3){
-  padding-top:100px;
+.homepage .kelas .row:nth-child(3) {
+  padding-top: 100px;
 }
 /* STYLE HOMPAGE TESTIMONIAL */
-.homepage .testimonial{
+.homepage .testimoni {
   background-color: var(--primary-color);
 }
-.homepage .testimonial h1{
+.homepage .testimoni h1 {
   color: var(--color-text);
+}
+
+.homepage .testimoni .swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.homepage .testimoni .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  padding: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.homepage .testimoni .swiper-slide-active {
+  cursor: grabbing;
+}
+
+.homepage .testimoni .swiper-slide .desc {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.homepage .testimoni .swiper-slide .people {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 10px;
+}
+
+.homepage .testimoni .swiper-slide .people h5,
+.homepage .testimoni .swiper-slide .people p {
+  color: var(--color-text);
+}
+
+.homepage .testimoni .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
