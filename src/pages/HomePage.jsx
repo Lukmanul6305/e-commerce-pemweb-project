@@ -1,7 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import HeroImage from "../assets/img/hero.png";
+
 import { kelasTerbaru, dataSwiper } from "../data/index";
 import { useNavigate } from "react-router-dom";
+import FaqComponent from "../components/FaqComponent";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -86,6 +88,7 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      {/* Testimoni section */}
       <div className="testimoni py-5">
         <Container>
           <Row>
@@ -124,13 +127,12 @@ const HomePage = () => {
               {dataSwiper.map((data) => {
                 return (
                   <SwiperSlide key={data.id} className="shadow-sm ">
+                    <img src={data.image} alt="" />
+                    <h5 className="mb-2">{data.name}</h5>
+                    <h5 className="m-1.5 fw-bold">{data.skill}</h5> <br />
                     <p className="desc">{data.desc}</p>
                     <div className="people">
-                      <img src={data.image} alt="" />
-                      <div>
-                        <h5 className="mb-1">{data.name}</h5>
-                        <h5 className="m-0 fw-bold">{data.skill}</h5>
-                      </div>
+                      <div></div>
                     </div>
                   </SwiperSlide>
                 );
@@ -139,6 +141,9 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      {/* Faq Section */}
+      <FaqComponent />
+      {/* Faq Section end*/}
     </div>
   );
 };

@@ -170,6 +170,7 @@ header {
 .homepage .kelas .row:nth-child(3) {
   padding-top: 100px;
 }
+
 /* STYLE HOMPAGE TESTIMONIAL */
 .homepage .testimoni {
   background-color: var(--primary-color);
@@ -185,7 +186,7 @@ header {
 }
 
 .homepage .testimoni .swiper-slide {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   background: #fff;
   padding: 20px;
@@ -221,9 +222,28 @@ header {
   color: var(--color-text);
 }
 
+.homepage .testimoni .swiper-slide .people h5 {
+  font-weight: 600;
+}
+
+.homepage .testimoni .swiper-slide .people p {
+  opacity: 50%;
+}
+
 .homepage .testimoni .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 80px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage .testimoni .swiper {
+    padding-inline: 10px;
+  }
+  .homepage .testimoni .swiper-slide .people {
+    justify-content: center;
+  }
 }
