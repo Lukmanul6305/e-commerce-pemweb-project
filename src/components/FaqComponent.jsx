@@ -1,39 +1,53 @@
-import { Container, Row, Col, Accordion } from "react-bootstrap";
+import { useState } from 'react';
+import { Container, Row, Col, Card, Collapse } from 'react-bootstrap';
+import '../css/main.css';
 
-const FaqComponent = () => {
+function FaqComponent() {
+  const dataFaq = [
+    { tanya: 'Apa itu layanan kami?', jawab: 'Layanan kami menyediakan berbagai fitur keren.' },
+    { tanya: 'Bagaimana cara mendaftar?', jawab: 'Kamu bisa daftar lewat website kami.' },
+    { tanya: 'Apakah gratis?', jawab: 'Ada yang gratis, ada juga yang berbayar.' },
+    { tanya: 'Cara menghubungi kami?', jawab: 'Hubungi lewat email atau kontak di website.' },
+    { tanya: 'Apakah data aman?', jawab: 'Kami menjaga data kamu dengan aman.' },
+    { tanya: 'Bisa dibatalkan?', jawab: 'Ya, bisa dibatalkan kapan saja.' }
+  ];
+
+  const [terbuka, setTerbuka] = useState(null);
+
+  const bukaJawaban = (index) => {
+    setTerbuka(terbuka === index ? null : index);
+  };
+
   return (
-    <div className="faq">
-      <Row>
-        <Col></Col>
-      </Row>
-      <Accordion>
-        <Accordion.Item eventKey="0">
-          <Accordion.Header>Accordion Item #1</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Accordion Item #2</Accordion.Header>
-          <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+    <div className="faq-page h-100 d-flex align-items-center">
+      <Container className="py-5">
+        <h1 className="text-center fw-bold faq-title mb-5">
+          Pertanyaan yang sering ditanyakan
+        </h1>
+        <Row className="justify-content-center g-3S">
+          {dataFaq.map((item, i) => (
+            <Col md={6} className="mb-4" key={i}>
+              <Card
+                onClick={() => bukaJawaban(i)}
+                className="faq-card shadow-sm"
+                style={{ cursor: 'pointer' }}
+              >
+                <Card.Body>
+                  <Card.Title className="fw-semibold">{item.tanya}</Card.Title>
+                  <Collapse in={terbuka === i}>
+                    <div className={`answer ${terbuka === i ? "show" : "hide"}`}>
+                      {item.jawab}
+                    </div>
+                  </Collapse>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
-};
+}
 
 export default FaqComponent;
+
