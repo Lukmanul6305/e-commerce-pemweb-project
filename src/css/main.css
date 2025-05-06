@@ -247,3 +247,62 @@ header {
     justify-content: center;
   }
 }
+
+/* Style FAQ */
+.faq {
+  background-color: var(--primary-color);
+  padding-top: 100px;
+  padding-top: 100px;
+}
+
+.faq h2 {
+  color: var(--color-text);
+}
+
+.faq .accordion .accordion-button {
+  color: var(--color-text);
+  background-color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.faq .accordion .accordion-body {
+  background-color: #ffffff;
+}
+/* Style FAQ end */
+
+/* Style Footer */
+.footer {
+  padding: 80px 0 50px 0;
+  width: 100%;
+  min-height: 100px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) h3 {
+  color: var(--color-text);
+}
+
+.footer .row:nth-child(1) .col:nth-child(1) .desc {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .no a,
+.footer .email a {
+  display: flex;
+  align-items: center;
+  color: black;
+  column-gap: 5px;
+}
+
+.footer .no a:hover,
+.footer .email a:hover {
+  color: var(--secondary-color);
+}
+/* Style Footer end*/
