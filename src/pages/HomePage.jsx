@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import TestimoniPage from "./TestimoniPage";
 
 const HomePage = () => {
   let Navigate = useNavigate();
@@ -144,6 +145,7 @@ const HomePage = () => {
       {/* Faq Section */}
       <FaqComponent />
       {/* Faq Section end*/}
+      {/* <TestimoniPage/> */}
     </div>
   );
 };
