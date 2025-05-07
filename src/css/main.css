@@ -247,6 +247,54 @@ header {
     justify-content: center;
   }
 }
+/* Style HomePage Testimoni end */
+
+/* Style Kelas */
+.kelas-page .kelas {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1) {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1) h1 {
+  color: var(--color-text);
+}
+
+.kelas-page .kelas .row:nth-child(1) p {
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 2;
+}
+
+.kelas-page .kelas .row:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Perbaikan: hapus spasi di "minmax (" */
+  gap: 20px; /* Tambahkan jarak antar item */
+  padding-inline: 10px; /* Opsional, agar tidak mentok di pinggir */
+}
+.kelas-page .kelas .row:nth-child(2) .col {
+  background-color: #ffffff;
+  padding: 0;
+}
+.kelas-page .kelas .row:nth-child(2) img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+  border-radius: 10px; /* Opsional: biar lebih halus tampilannya */
+}
+.kelas-page .kelas .row:nth-child(2) h5 {
+  color: var(--color-text);
+  font-weight: bold;
+  line-height: 1.5;
+}
+/* Style Kelas end */
 
 /* Style FAQ */
 .faq {
