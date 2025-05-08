@@ -19,28 +19,35 @@ const HomePage = () => {
   let Navigate = useNavigate();
   return (
     <div className="homepage">
-      <header className="w-100 min-vh-100 d-flex align-items-center">
+      <header className="w-100 min-vh-100 d-flex align-items-center overflow-hidden">
         <Container>
           <Row className="header-box d-flex align-items-center pt-lg-5">
             <Col lg="6">
-              <h1 className="mb-4">
+              <h1 className="mb-4 animate__animated animate__bounceInUp animeate__delay-1s">
                 Belajar Skill Digital <br /> yang Dibutuhkan Dunia Kerja
                 Sekarang
               </h1>
-              <p className="mb-4">
+              <p className="mb-4 animate__animated animate__fadeInUp animeate__delay-1s">
                 Mulai dari dasar hingga mahir. Pelajari desain, coding,
                 pemasaran digital, dan lebih banyak lagi—semua dalam satu
                 platform, kapan saja, di mana saja
               </p>
-              <button className="btn btn-dark btn-lg rounded-1 me-2 mb-xs-0 mb-2">
+              <button
+                className="btn btn-dark btn-lg rounded-1 me-2 mb-xs-0 mb-2 animate__animated animate__fadeInUp animeate__delay-1s"
+                onClick={() => Navigate("/kelas")}
+              >
                 Lihat Kelas
               </button>
-              <button className="btn btn-outline-dark btn-lg rounded-1 mb-xs-0 mb-2">
+              <button className="btn btn-outline-dark btn-lg rounded-1 mb-xs-0 mb-2 animate__animated animate__fadeInUp animeate__delay-1s">
                 Lihat Promo
               </button>
             </Col>
             <Col lg="6" className="pt-lg-0 pt-5">
-              <img src={HeroImage} alt="hero-img" className="img-fluid" />
+              <img
+                src={HeroImage}
+                alt="hero-img"
+                className="animate__animated animate__backInUp"
+              />
             </Col>
           </Row>
         </Container>
@@ -59,7 +66,13 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return (
-                <Col key={kelas.id} className="shadow rounded-3 mb-4">
+                <Col
+                  key={kelas.id}
+                  className="shadow rounded"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay={kelas.delay}
+                >
                   <img
                     src={kelas.image}
                     alt="unplash.com"
@@ -80,6 +93,8 @@ const HomePage = () => {
             <Col className="text-center">
               <button
                 className="btn btn-success rounded-5 btn-lg"
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 onClick={() => Navigate("/kelas")}
               >
                 Lihat Semua Kelas
@@ -89,6 +104,8 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      {/* Mentor section */}
+      {/* Mentor section end*/}
       {/* Testimoni section */}
       <div className="testimoni py-5">
         <Container>
@@ -132,9 +149,7 @@ const HomePage = () => {
                     <h5 className="mb-2">{data.name}</h5>
                     <h5 className="m-1.5 fw-bold">{data.skill}</h5> <br />
                     <p className="desc">{data.desc}</p>
-                    <div className="people">
-                      <div></div>
-                    </div>
+                    <div className="people"></div>
                   </SwiperSlide>
                 );
               })}
@@ -145,7 +160,7 @@ const HomePage = () => {
       {/* Faq Section */}
       <FaqComponent />
       {/* Faq Section end*/}
-      {/* <TestimoniPage/> */}
+      {/* <TestimoniPage /> */}
     </div>
   );
 };

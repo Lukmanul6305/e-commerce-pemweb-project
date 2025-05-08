@@ -47,7 +47,7 @@ export const kelasTerbaru = [
     title: "Master UI/UX with Figma : From Zero to Hero",
     price: "Rp. 300.000",
     buy: "Daftar Sekarang",
-    delay: "",
+    delay: "50",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const kelasTerbaru = [
     title: "Software Engineering Bootcamp : Build Scalable Apps Like a Pro",
     price: "Rp. 340.000",
     buy: "Daftar Sekarang",
-    delay: "200",
+    delay: "250",
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const kelasTerbaru = [
     title: "Full-Stack Web Developer : Code Your Career",
     price: "Rp. 280.000",
     buy: "Daftar Sekarang",
-    delay: "400",
+    delay: "450",
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ export const kelasTerbaru = [
     title: "Data Science Mastery : Unlock the Power of Data",
     price: "Rp. 420.000",
     buy: "Daftar Sekarang",
-    delay: "250",
+    delay: "50",
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ export const kelasTerbaru = [
     title: "Data Analyst Project Course : Turn Numbers into Insights",
     price: "Rp. 380.000",
     buy: "Daftar Sekarang",
-    delay: "200",
+    delay: "250",
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ export const kelasTerbaru = [
     title: "Modern HR : From People Management to HR Tech",
     price: "Rp. 300.000",
     buy: "Daftar Sekarang",
-    delay: "400",
+    delay: "450",
   },
 ];
 
