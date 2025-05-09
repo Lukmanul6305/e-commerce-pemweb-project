@@ -13,6 +13,9 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init();
 
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App />);
+
 // Importing React Router
 import { BrowserRouter } from "react-router-dom";
 

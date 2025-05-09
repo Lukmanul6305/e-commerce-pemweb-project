@@ -3,6 +3,9 @@ import { Routes, Route } from "react-router-dom";
 import NavbarComponent from "./components/NavbarComponents";
 import FooterComponent from "./components/FooterComponent";
 
+import LoginForm from "./components/LoginForm";
+import Dashboard from "./pages/Dashbord";
+
 import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
 import TestimoniPage from "./pages/TestimoniPage";
@@ -20,6 +23,8 @@ function App() {
         <Route path="/testimoni" Component={TestimoniPage}></Route>
         <Route path="/faq" Component={FaqPage}></Route>
         <Route path="/syarat" Component={SyaratPage}></Route>
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
       <FooterComponent />

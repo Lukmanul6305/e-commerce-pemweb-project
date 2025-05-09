@@ -9,9 +9,9 @@ const FooterComponent = () => {
           <Col>
             <h3 className="fw-bold">LUFION Academy</h3>
             <p className="desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus adipisci illum est sapiente. Itaque optio maiores
-              asperiores aspernatur quas expedita!
+              Lufion Academy adalah platform pembelajaran online yang menawarkan
+              kursus berkualitas untuk membantu Anda mengembangkan keterampilan
+              dan pengetahuan di berbagai bidang.
             </p>
             <div className="no mb-1 mt-4">
               <Link className="text-decoration-none">

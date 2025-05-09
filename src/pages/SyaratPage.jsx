@@ -12,85 +12,83 @@ const SyaratPage = () => {
                 Syarat & Ketentuan
               </h1>
               <p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Syarat dan ketentuan ini mengatur penggunaan layanan Lufion
+                Academy.
               </p>
             </Col>
           </Row>
           <Row className="pt-5">
             <Col>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                odio quae deleniti eius modi voluptatum animi dolores vitae
-                quaerat nemo aliquam magni officiis voluptatibus porro in
-                suscipit fugit accusantium cum, odit saepe illo sunt
-                consequuntur? Temporibus cupiditate debitis quidem, fugiat quos
-                inventore totam sequi doloremque at quam aliquid molestiae
-                officia.
+                Dengan mengakses dan menggunakan layanan Lufion Academy, Anda
+                setuju untuk mematuhi syarat dan ketentuan berikut. Jika Anda
+                tidak setuju dengan syarat dan ketentuan ini, harap tidak
+                menggunakan layanan kami.
               </p>
             </Col>
           </Row>
           <Row className="py-3">
             <Col>
-              <h4 className="fw-bold">1. lorem</h4>
+              <h4 className="fw-bold">1. Pendaftaran dan Akun Pengguna</h4>
             </Col>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-              tenetur mollitia id quos nam quae minima excepturi eum, maiores
-              porro minus ex rem architecto natus quas optio libero assumenda!
-              Provident.
-            </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
-              asperiores unde suscipit fugit, laudantium illo nam enim dolorum
-              eligendi, assumenda ipsa quae aliquid, ex magnam? Minima minus
-              iusto consequuntur facere exercitationem delectus ipsa sequi
-              repellat, velit praesentium illum numquam impedit!
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente
-              atque ex laudantium maiores libero? Ducimus eligendi, repellat
-              nisi maiores aperiam eius quasi repellendus inventore, assumenda
-              non magni. Quisquam eos fugit dolorum, nesciunt repellat libero
-              soluta hic obcaecati iste ab numquam consectetur ex dolore
-              corporis consequatur. Reprehenderit dolorem impedit pariatur fuga.
+              Untuk dapat mengakses kursus yang tersedia di Lufion Academy, Anda
+              diharuskan untuk membuat akun dengan memberikan informasi yang
+              akurat, lengkap, dan terkini. Anda bertanggung jawab penuh atas
+              kerahasiaan akun Anda dan segala aktivitas yang terjadi di bawah
+              akun Anda. Jika Anda merasa ada aktivitas yang mencurigakan,
+              segera hubungi tim dukungan kami.
             </p>
           </Row>
           <Row className="py-3">
             <Col>
-              <h4 className="fw-bold">2. lorem</h4>
+              <h4 className="fw-bold">2. Akses Kursus dan Materi</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Praesentium aut molestias quidem quis hic sed aspernatur quo
-                minima maiores illo dolorum, ducimus quisquam, rerum ex! Vel
-                culpa rerum totam, neque ut ducimus, quibusdam natus provident
-                dolores molestias facere, voluptates quaerat?
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deserunt nostrum quas saepe repellendus architecto quisquam
-                possimus vero fugiat rerum expedita libero in ab tempora
-                necessitatibus, labore quis. Quis, ducimus natus.
+                Setelah pendaftaran dan pembayaran yang berhasil (jika
+                diperlukan), Anda akan mendapatkan akses ke kursus yang Anda
+                pilih. Akses ini dapat berupa akses jangka waktu tertentu atau
+                akses seumur hidup, sesuai dengan ketentuan kursus
+                masing-masing. Semua materi yang disediakan dalam kursus adalah
+                hak milik Lufion Academy dan dilindungi oleh hukum hak cipta.
+                Penggunaan materi hanya boleh untuk tujuan pribadi dan
+                non-komersial.
               </p>
             </Col>
           </Row>
           <Row className="py-3">
             <Col>
-              <h4 className="fw-bold">3. lorem</h4>
+              <h4 className="fw-bold">3. Pembayaran dan Biaya</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-                pariatur minus asperiores nihil facere aspernatur quidem
-                quibusdam! Est, minus animi autem amet eveniet officia placeat,
-                at delectus repellat perferendis quasi soluta alias ipsum
-                obcaecati accusantium consectetur expedita quaerat. Quidem
-                distinctio voluptatibus at dolores alias autem quos error itaque
-                minima repellendus!
+                Lufion Academy mengenakan biaya untuk akses ke beberapa kursus.
+                Pembayaran dilakukan melalui metode yang disediakan di platform
+                kami. Semua biaya kursus yang telah dibayar bersifat final dan
+                tidak dapat dikembalikan, kecuali dalam keadaan khusus yang
+                ditentukan dalam kebijakan pengembalian dana.
               </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <h4 className="fw-bold">4. Penggunaan Konten</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis dolore nihil sit sunt, labore consequuntur magni
-                consectetur eveniet magnam facere! Sapiente numquam quasi nobis.
-                Omnis, quae sed accusantium incidunt molestias autem. Provident
-                voluptatem hic est aliquid sunt perferendis maiores voluptas.
+                Konten yang disediakan di Lufion Academy, termasuk video, materi
+                teks, dan latihan, hanya boleh digunakan untuk kepentingan
+                pribadi dan non-komersial. Anda tidak diperbolehkan untuk
+                menyalin, memodifikasi, mendistribusikan, atau menggunakan
+                konten untuk tujuan komersial tanpa izin tertulis dari Lufion
+                Academy.
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <h4 className="fw-bold">5. Pengembalian Dana</h4>
+              <p>
+                Pengembalian dana untuk kursus yang dibeli dapat dilakukan dalam
+                waktu 14 hari setelah pembelian jika Anda merasa kursus yang
+                Anda pilih tidak sesuai dengan harapan atau kebutuhan Anda.
+                Namun, pengembalian dana tidak berlaku jika kursus telah diakses
+                sepenuhnya atau jika sertifikat telah diterbitkan.
               </p>
             </Col>
           </Row>

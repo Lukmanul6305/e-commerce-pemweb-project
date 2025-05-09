@@ -61,8 +61,7 @@ const HomePage = () => {
             <Col>
               <h1 className="text-center fw-bold">Kelas Terbaru</h1>
               <p className="text-center mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
-                deleniti.
+                Rekomendasi Kelas Terbaru untuk Anda
               </p>
             </Col>
           </Row>
@@ -113,9 +112,12 @@ const HomePage = () => {
         <Container>
           <Row>
             <Col>
-              <h1 className="text-center p-5 fw-bold animate__animated animate__fadeInUp animate__delay-1s">
+              <h1 className="text-center fw-bold p-2 animate__animated animate__fadeInUp animate__delay-1s">
                 Mentor
               </h1>
+              <p className="text-center mb-5">
+                Belajar Langsung dari Para Expert
+              </p>
             </Col>
           </Row>
           <Row className="justify-content-center">
