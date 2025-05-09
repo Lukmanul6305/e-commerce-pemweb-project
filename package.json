@@ -12,8 +12,12 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
+<<<<<<< HEAD
     "bootstrap": "^5.3.5",
     "firebase": "^11.7.1",
+=======
+    "bootstrap": "^5.3.6",
+>>>>>>> e040a0658a2d62757b05d36b01ac101f10856980
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
