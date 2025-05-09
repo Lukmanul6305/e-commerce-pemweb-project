@@ -53,7 +53,6 @@ function App() {
       {!hideNavFooter && <NavbarComponent />}
 
       <Routes>
-<<<<<<< HEAD
         <Route path="/" Component={HomePage}></Route>
         <Route path="/kelas" Component={KelasPage}></Route>
         <Route path="/testimoni" Component={TestimoniPage}></Route>
@@ -61,17 +60,9 @@ function App() {
         <Route path="/syarat" Component={SyaratPage}></Route>
         <Route path="/login" element={<LoginForm />} />
         <Route path="/dashboard" element={<Dashboard />} />
-=======
-        <Route path="/" Component={HomePage} />
-        <Route path="/kelas" Component={KelasPage} />
-        <Route path="/testimoni" Component={TestimoniPage} />
-        <Route path="/faq" Component={FaqPage} />
-        <Route path="/syarat" Component={SyaratPage} />
-        <Route path="/PembelajaranPage" Component={Pembelajaran} />
->>>>>>> e040a0658a2d62757b05d36b01ac101f10856980
       </Routes>
 
-      {!hideNavFooter && <FooterComponent />}
+      {<FooterComponent />}
     </div>
   );
 }
