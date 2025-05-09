@@ -304,6 +304,31 @@ header {
   line-height: 1.5;
 }
 /* Style Kelas end */
+
+/* Style Mentor */
+.mentor-page {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+/* Posisi panah swiper ke luar card */
+.swiper-button-next,
+.swiper-button-prev {
+  color: black; /* ubah warna jika perlu */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: -2px; /* menjauh ke kiri dari card */
+}
+
+.swiper-button-next {
+  right: -2px; /* menjauh ke kanan dari card */
+}
+
+/* Style Mentor end */
 /* STYLE TESTIMONIAL */
 .testimoni-page .testimoni {
   background-color: var(--navbar-color);
@@ -372,7 +397,7 @@ header {
 
 /* Style FAQ */
 .faq {
-  background-color: var(--primary-color);
+  background-color: white;
   padding-top: 100px;
   padding-top: 100px;
 }
@@ -447,3 +472,5 @@ header {
   padding-top: 100px;
 }
 /* Style Footer end*/
+
+/*Media query*/

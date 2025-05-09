@@ -1,15 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
 import HeroImage from "../assets/img/hero.png";
 
-import { kelasTerbaru, dataSwiper } from "../data/index";
+import { kelasTerbaru, dataSwiper, mentor } from "../data/index";
 import { useNavigate } from "react-router-dom";
 import FaqComponent from "../components/FaqComponent";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
 import { Pagination } from "swiper/modules";
@@ -19,7 +21,8 @@ const HomePage = () => {
   let Navigate = useNavigate();
   return (
     <div className="homepage">
-      <header className="w-100 min-vh-100 d-flex align-items-center overflow-hidden">
+      {/* w-100 min-vh-100 d-flex align-items-center overflow-hidden */}
+      <header>
         <Container>
           <Row className="header-box d-flex align-items-center pt-lg-5">
             <Col lg="6">
@@ -80,7 +83,7 @@ const HomePage = () => {
                   />
                   <h5 className="mb-5 px-3">{kelas.title}</h5>
                   <div className="ket d-flex justify-content-between align-items-center px-3 pb-3">
-                    <p className="m-0 text-primary fw-bold">{kelas.price}</p>
+                    {/* <p className="m-0 text-primary fw-bold">{kelas.price}</p> */}
                     <button className="btn btn-danger rounded-1">
                       {kelas.buy}
                     </button>
@@ -104,8 +107,75 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+
       {/* Mentor section */}
+      <div className="mentor-page">
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="text-center p-5 fw-bold animate__animated animate__fadeInUp animate__delay-1s">
+                Mentor
+              </h1>
+            </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <Col md={25} className="position-relative">
+              <Swiper
+                rewind={true}
+                navigation={true}
+                modules={[Navigation]}
+                className="mySwiper"
+                slidesPerView={1}
+                centeredSlides={true}
+                spaceBetween={0}
+              >
+                {mentor.map((data) => (
+                  <SwiperSlide key={data.id}>
+                    <div
+                      className="d-flex bg-white rounded shadow mx-auto"
+                      style={{
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        // maxWidth: "900px",
+                        width: "90%",
+                      }}
+                    >
+                      <div
+                        style={{
+                          flex: 1,
+                          paddingRight: "30px",
+                          padding: "20px",
+                        }}
+                      >
+                        <h4 className="fw-bold">{data.name}</h4>
+                        <p className="fw-bold mb-2">{data.skill}</p>
+                        <p className="desc" style={{ whiteSpace: "pre-wrap" }}>
+                          Deskripsi Pengajar : <br />
+                          {data.desc}
+                        </p>
+                      </div>
+                      <div style={{ flexShrink: 0 }}>
+                        <img
+                          src={data.image}
+                          alt={data.name}
+                          style={{
+                            width: "300px",
+                            borderRadius: "0px 5px 5px 0px",
+                            objectFit: "cover",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
       {/* Mentor section end*/}
+
       {/* Testimoni section */}
       <div className="testimoni py-5">
         <Container>

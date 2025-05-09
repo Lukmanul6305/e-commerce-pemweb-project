@@ -23,7 +23,14 @@ const NavbarComponents = () => {
 
   return (
     <div>
-      <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
+      <Navbar
+        expand="lg"
+        className={changeColor ? "color-active" : ""}
+        style={{
+          transition: "0.5s",
+          position: "fixed",
+        }}
+      >
         <Container>
           <Navbar.Brand as={Link} to="/" className="fs-4 fw-bold">
             <span className="logo-box">L</span>

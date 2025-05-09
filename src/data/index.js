@@ -8,6 +8,10 @@ import KelasImage7 from "../assets/img/kelas/product-management.png";
 import KelasImage8 from "../assets/img/kelas/game-developer.png";
 import KelasImage9 from "../assets/img/kelas/cyber-security.png";
 
+import rofiq from "../assets/img/mentor/rofiq.jpg";
+import ofi from "../assets/img/mentor/ofi.jpg";
+import lukman from "../assets/img/mentor/lukman.jpg";
+
 import People1 from "../assets/img/testimoni/people-1.jpg";
 import People2 from "../assets/img/testimoni/people-2.jpg";
 import People3 from "../assets/img/testimoni/people-3.jpg";
@@ -163,6 +167,30 @@ export const semuaKelas = [
     price: "Rp. 320.000",
     buy: "Beli Kelas",
     delay: "600",
+  },
+];
+
+export const mentor = [
+  {
+    id: 1,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: rofiq,
+    name: "Rofiq",
+    skill: "Web Developer",
+  },
+  {
+    id: 2,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: ofi,
+    name: "Ofi",
+    skill: "Game Developer",
+  },
+  {
+    id: 3,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
+    image: lukman,
+    name: "Lukman",
+    skill: "Cyber Security",
   },
 ];
 
