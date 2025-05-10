@@ -101,33 +101,65 @@ header {
 }
 /* Style HomePage Header end*/
 /* Media Query */
+/* 🌐 Tablet dan bawah (≤ 992px) */
 @media screen and (max-width: 992px) {
   .homepage .header-box {
-    padding: 8rem;
+    padding: 4rem 2rem;
+    text-align: center;
   }
 
   .homepage .header-box img {
-    width: 400px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     display: block;
     margin-inline: auto;
   }
 }
 
+/* 📱 HP sedang (≤ 575px) */
 @media screen and (max-width: 575px) {
   .homepage .header-box h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .homepage .header-box p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .mentor-card {
+    flex-direction: column !important;
+    text-align: center;
+    width: 90%; /* Menyesuaikan ukuran card agar lebih kecil */
+    margin: 0 auto; /* Memusatkan card */
+  }
+
+  .mentor-card img {
+    width: 80% !important; /* Mengatur ukuran gambar agar tidak terlalu besar */
+    max-width: 100%;
+    border-radius: 5px 5px 0 0 !important;
+    margin-bottom: 1rem;
+  }
+
+  .mentor-card .desc {
+    padding: 0 1rem;
+    font-size: 14px;
+    text-align: justify;
   }
 }
 
+/* 📱 HP kecil (≤ 475px) */
 @media screen and (max-width: 475px) {
   .homepage .header-box h1 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 
   .homepage .header-box p {
     font-size: 14px;
   }
 }
+
 /* Media Query end */
 
 /* Style HomePage Kelas */

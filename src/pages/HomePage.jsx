@@ -138,7 +138,7 @@ const HomePage = () => {
                 {mentor.map((data) => (
                   <SwiperSlide key={data.id}>
                     <div
-                      className="d-flex bg-white rounded shadow mx-auto"
+                      className="mentor-card d-flex bg-white rounded shadow mx-auto"
                       style={{
                         alignItems: "center",
                         justifyContent: "space-between",
