@@ -102,7 +102,7 @@ export const semuaKelas = [
     title: "Master UI/UX with Figma: From Zero to Hero",
     price: "Rp. 300.000",
     buy: "Beli Kelas",
-    delay: "1300",
+    delay: "1000",
   },
   {
     id: 2,
@@ -110,7 +110,7 @@ export const semuaKelas = [
     title: "Software Engineering Bootcamp: Build Scalable Apps Like a Pro",
     price: "Rp. 340.000",
     buy: "Beli Kelas",
-    delay: "1600",
+    delay: "1200",
   },
   {
     id: 3,
@@ -118,7 +118,7 @@ export const semuaKelas = [
     title: "Full-Stack Web Developer : Code Your Career",
     price: "Rp. 280.000",
     buy: "Beli Kelas",
-    delay: "1900",
+    delay: "1400",
   },
   {
     id: 4,
@@ -126,7 +126,7 @@ export const semuaKelas = [
     title: "Data Science Mastery : Unlock the Power of Data",
     price: "Rp. 420.000",
     buy: "Beli Kelas",
-    delay: "250",
+    delay: "800",
   },
   {
     id: 5,
@@ -134,7 +134,7 @@ export const semuaKelas = [
     title: "Data Analyst Project Course : Turn Numbers into Insights",
     price: "Rp. 380.000",
     buy: "Beli Kelas",
-    delay: "300",
+    delay: "1200",
   },
   {
     id: 6,
@@ -142,7 +142,7 @@ export const semuaKelas = [
     title: "Modern HR : From People Management to HR Tech",
     price: "Rp. 300.000",
     buy: "Beli Kelas",
-    delay: "600",
+    delay: "1450",
   },
   {
     id: 7,
@@ -150,7 +150,7 @@ export const semuaKelas = [
     title: "Product Management 101 : Lead with Vision & Strategy",
     price: "Rp. 340.000",
     buy: "Beli Kelas",
-    delay: "",
+    delay: "700",
   },
   {
     id: 8,
@@ -158,7 +158,7 @@ export const semuaKelas = [
     title: "Game Dev Journey : Build Games That People Love",
     price: "Rp. 400.000",
     buy: "Beli Kelas",
-    delay: "300",
+    delay: "1000",
   },
   {
     id: 9,
@@ -166,7 +166,7 @@ export const semuaKelas = [
     title: "Cyber Security Essentials : Defend the Digital World",
     price: "Rp. 320.000",
     buy: "Beli Kelas",
-    delay: "600",
+    delay: "1300",
   },
 ];
 

@@ -58,11 +58,12 @@ function App() {
         <Route path="/testimoni" Component={TestimoniPage}></Route>
         <Route path="/faq" Component={FaqPage}></Route>
         <Route path="/syarat" Component={SyaratPage}></Route>
+        <Route path="/pembelajaranPage" Component={Pembelajaran}></Route>
         <Route path="/login" element={<LoginForm />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
 
-      {<FooterComponent />}
+      {!hideNavFooter && <FooterComponent />}
     </div>
   );
 }

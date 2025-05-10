@@ -14,7 +14,7 @@ const KelasPage = () => {
                 Semua Kelas
               </h1>
               <p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                lihat semua kelas yang kami tawarkan
               </p>
             </Col>
           </Row>

@@ -36,24 +36,29 @@ const Pembelajaran = () => {
 
   const daftarMateri = [
     {
-      judul: "Materi 1",
-      konten: "Ini adalah paragraf pembelajaran untuk Materi 1. Kamu akan belajar dasar-dasar HTML dan struktur halaman web.",
+      judul: "Materi 1 : Pengenalan Web Development",
+      konten:
+        "Ini adalah paragraf pembelajaran untuk Materi 1. Kamu akan belajar dasar-dasar HTML dan struktur halaman web.",
     },
     {
       judul: "Materi 2",
-      konten: "Ini adalah paragraf pembelajaran untuk Materi 2. Kita masuk ke CSS dan bagaimana mempercantik tampilan.",
+      konten:
+        "Ini adalah paragraf pembelajaran untuk Materi 2. Kita masuk ke CSS dan bagaimana mempercantik tampilan.",
     },
     {
       judul: "Materi 3",
-      konten: "Materi 3 membahas dasar JavaScript dan bagaimana membuat web jadi interaktif.",
+      konten:
+        "Materi 3 membahas dasar JavaScript dan bagaimana membuat web jadi interaktif.",
     },
     {
       judul: "Materi 4",
-      konten: "Di Materi 4 kita akan mengenal DOM dan cara manipulasi elemen HTML dengan JavaScript.",
+      konten:
+        "Di Materi 4 kita akan mengenal DOM dan cara manipulasi elemen HTML dengan JavaScript.",
     },
     {
       judul: "Materi 5",
-      konten: "Materi terakhir membahas integrasi semua skill untuk membuat mini project.",
+      konten:
+        "Materi terakhir membahas integrasi semua skill untuk membuat mini project.",
     },
   ];
 
@@ -87,9 +92,15 @@ const Pembelajaran = () => {
             </>
           ) : (
             <>
-              <h4>judul</h4>
+              <h4>Rofiq</h4>
               <p>Deskripsi Pengajar :</p>
-              <p>Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi</p>
+              <p>
+                Hai! Aku adalah seorang Web Developer yang sudah beberapa tahun
+                berkecimpung di dunia pengembangan website, dari bikin tampilan
+                yang menarik sampai bikin fitur yang benar-benar jalan. Aku
+                biasa pakai HTML, CSS, JavaScript, React, dan juga back-end
+                seperti Node.js.
+              </p>
             </>
           )}
         </div>
@@ -114,7 +125,9 @@ const Pembelajaran = () => {
             }}
             onClick={toggleModul}
           >
-            <span style={{ fontSize: "24px", marginRight: "10px" }}>{showModul ? "➤" : "◀"}</span>
+            <span style={{ fontSize: "24px", marginRight: "10px" }}>
+              {showModul ? "➤" : "◀"}
+            </span>
             {showModul && <strong>Daftar modul</strong>}
           </div>
 
@@ -122,7 +135,15 @@ const Pembelajaran = () => {
           {showModul && (
             <ul style={{ marginTop: "20px", paddingLeft: "20px" }}>
               {daftarMateri.map((materi, index) => (
-                <li key={index} style={{ fontWeight: "bold", cursor: "pointer", marginBottom: "10px" }} onClick={() => setMateriAktif(materi)}>
+                <li
+                  key={index}
+                  style={{
+                    fontWeight: "bold",
+                    cursor: "pointer",
+                    marginBottom: "10px",
+                  }}
+                  onClick={() => setMateriAktif(materi)}
+                >
                   {materi.judul}
                 </li>
               ))}
