@@ -1,21 +1,11 @@
 import React from "react";
-import { auth } from "../firebase";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const navigate = useNavigate();
-  const provider = new GoogleAuthProvider();
-
-  const handleGoogleLogin = async () => {
-    try {
-      await signInWithPopup(auth, provider);
-      alert("Login berhasil!");
-      navigate("/dashboard");
-    } catch (error) {
-      alert("Gagal login: " + error.message);
-    }
-  };
+  function handleGoogleLogin(){
+    alert("anda login")
+  }
 
   return (
     <div className="text-center">
@@ -25,7 +15,7 @@ const LoginForm = () => {
       <NavLink to="/login">
         <Button variant="dark">Masuk</Button>
       </NavLink>
-      <button onClick={handleGoogleLogin}>Login dengan Google</button>
+      <button onClick={handleGoogleLogin()}>Login dengan Google</button>
     </div>
   );
 };

@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { navLinks } from "../data/index";
 import { NavLink, Link, useNavigate } from "react-router-dom";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth } from "../firebase";
 
 const NavbarComponents = () => {
   const [changeColor, setChangeColor] = useState(false);
@@ -25,16 +23,7 @@ const NavbarComponents = () => {
   }, []);
 
   const handleGoogleLogin = async () => {
-    const provider = new GoogleAuthProvider();
-    try {
-      const result = await signInWithPopup(auth, provider);
-      console.log("Login berhasil", result.user);
-      alert("Login berhasil!");
-      navigate("/dashboard");
-    } catch (error) {
-      console.error("Gagal login:", error);
-      alert("Gagal login: " + error.message);
-    }
+    alert("login")
   };
 
   return (
@@ -76,7 +65,7 @@ const NavbarComponents = () => {
             </Nav>
             {/* Tambahan menu masuk dan daftar */}
             <div className="text-center">
-              <NavLink to="/login">
+              <NavLink to="#">
                 <Button variant="outline-dark rounded-1 me-2">Daftar</Button>
               </NavLink>
               <Button variant="dark" onClick={handleGoogleLogin}>
